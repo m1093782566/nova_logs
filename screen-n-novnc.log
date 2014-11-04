@@ -1,0 +1,9 @@
+vcap@ubuntu:~/devstack$ /usr/local/bin/nova-novncproxy --config-file /etc/nova/n ova.conf --web /opt/stack/noVNC & echo $! >/opt/stack/status/stack/n-novnc.pid;  fg || echo "n-novnc failed to start" | tee "/opt/stack/status/stack/n-novnc.fail ure"
+[1] 17731
+/usr/local/bin/nova-novncproxy --config-file /etc/nova/nova.conf --web /opt/stack/noVNC
+2014-10-31 15:10:21.815 [00;36mINFO nova.console.websocketproxy [[00;36m-[00;36m] [01;35m[00;36mWebSocket server settings:[00m
+2014-10-31 15:10:21.816 [00;36mINFO nova.console.websocketproxy [[00;36m-[00;36m] [01;35m[00;36m  - Listen on 0.0.0.0:6080[00m
+2014-10-31 15:10:21.816 [00;36mINFO nova.console.websocketproxy [[00;36m-[00;36m] [01;35m[00;36m  - Flash security policy server[00m
+2014-10-31 15:10:21.817 [00;36mINFO nova.console.websocketproxy [[00;36m-[00;36m] [01;35m[00;36m  - Web server. Web root: /opt/stack/noVNC[00m
+2014-10-31 15:10:21.817 [00;36mINFO nova.console.websocketproxy [[00;36m-[00;36m] [01;35m[00;36m  - No SSL/TLS support (no cert file)[00m
+2014-10-31 15:10:21.819 [00;36mINFO nova.console.websocketproxy [[00;36m-[00;36m] [01;35m[00;36m  - proxying from 0.0.0.0:6080 to None:None[00m
